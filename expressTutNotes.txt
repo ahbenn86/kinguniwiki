@@ -1,0 +1,32 @@
+1. bin / www / --> server root directory
+    - Compiled code
+
+2. public folders --> Files that are exposed and linked to the bin / root directory
+    - assets
+    - stylesheets
+    - scripts
+
+3. routes
+    - modules 
+    - class -> The data that you would find the views. (variables, methods, classes, etc)
+    - data
+    
+4. views
+    - template files -> HTML code
+    - template engines 
+    - views -> UI code (How it appears)
+        ->hbs
+    - every view template maps to a route file (you have index.hbs and index.js in your routes folder)
+    - the view template is a static HTML code where we will replace values/data dynamically
+    
+5. app.js -> The main activity. The heart of the application. 
+    - import your modules
+    - add the required modules and packages etc
+    - Runs the entire app
+    - All modules must be required here i.e. // var orderRouter = require('./routes/orders'); 
+                                                //orders.js would be the file itself 
+
+6. Package.json -> Manages all the dependency code 
+    - all dependencies 
+    - scripts for starting, testing, etc
+    
